@@ -3,7 +3,7 @@ import './feed.css';
 import React from 'react';
 import userData from '../../src/mock_data/userData.json'
 
-function feed() {
+function Feed() {
     const users = userData.user;
     return (
         <React.Fragment>
@@ -43,4 +43,4 @@ function feed() {
     );
 }
 
-export default feed;
+export default Feed;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './feed.css'
 
-function post() {
+function Post() {
     return (
         <React.Fragment>
             <p>Post</p>
@@ -9,4 +9,4 @@ function post() {
     );
 }
 
-export default post;
+export default Post;

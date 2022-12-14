@@ -1,6 +1,6 @@
 import React from "react";
 
-function nopage(){
+function NoPage(){
     return(
         <React.Fragment>
             <p>No Page Found</p>
@@ -8,4 +8,4 @@ function nopage(){
     )
 }
 
-export default nopage;
+export default NoPage;
