@@ -1,4 +1,4 @@
-import 'https://kit.fontawesome.com/4d0203a1a3.js';
+// import 'https://kit.fontawesome.com/4d0203a1a3.js';
 import './feed.css';
 import React from 'react';
 import userData from '../../src/mock_data/userData.json'
