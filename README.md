@@ -1,4 +1,4 @@
-# Getting Project is under devlopment
+# This Project is under devlopment
 
 ## will be live on :
 
