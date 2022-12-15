@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 function Feed() {
     const users = userData.user;
+    const defaultImg = "https://cdn.siasat.com/wp-content/uploads/2020/04/Instagram--780x470.jpg"
     return (
         <React.Fragment>
             <div id='header'>
@@ -24,7 +25,7 @@ function Feed() {
                             <div id='card-nav-rigth'><a href='/'>...</a></div>
                         </div>
                         <div id='card-img'>
-                            <img src={e.PostImage} alt='card-img' />
+                            <img src={e.PostImage || defaultImg} alt='card-img' />
                         </div>
                         <div id='card-footer'>
                             <div id='card-footer-likes'>
