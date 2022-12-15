@@ -1,7 +1,18 @@
 import './feed.css';
 import React from 'react';
-import userData from '../../src/mock_data/userData.json';
 import { Link } from "react-router-dom";
+
+// import userData from '../../src/mock_data/userData.json';
+// const fetch = require('node-fetch');
+let userData;
+
+fetch('https://rjrajujha.github.io/insta-node-api/mock_data/userData.json')
+    .then((val) => val.json())
+    .then((val2) => {
+        console.log("data fetched from github/mock_data");
+        userData = val2;
+    }).catch((err) => { console.log(`Error is ${err}`) })
+
 
 function Feed() {
     const users = userData.user;
@@ -10,7 +21,7 @@ function Feed() {
         <React.Fragment>
             <div id='header'>
                 <div id='nav-left'>  <Link to="/"> <i className="fa-brands fa-instagram"></i> </Link> <p className='logotext'>InstaClone</p> </div>
-                <div id='nav-right'> <Link to="/post"> <i class="fa-solid fa-camera">  </i> </Link> </div>
+                <div id='nav-right'> <Link to="/post"> <i className="fa-solid fa-camera">  </i> </Link> </div>
             </div>
             <div id='hr-line'></div>
 
@@ -30,7 +41,7 @@ function Feed() {
                         <div id='card-footer'>
                             <div id='card-footer-likes'>
                                 <div id='card-likes-icon'>
-                                    <div id='like-post'><i class="fa-regular fa-heart"></i></div>
+                                    <div id='like-post'><i className="fa-regular fa-heart"></i></div>
                                     <div id='card-likes-count'> {e.likes} Likes</div>
                                 </div>
                                 <div id='card-footer-date'>{e.date}</div>
