@@ -1,14 +1,15 @@
 import './feed.css';
 import React from 'react';
-import userData from '../../src/mock_data/userData.json'
+import userData from '../../src/mock_data/userData.json';
+import { Link } from "react-router-dom";
 
 function Feed() {
     const users = userData.user;
     return (
         <React.Fragment>
             <div id='header'>
-                <div id='nav-left'> <i class="fa fa-car"></i> </div>
-                <div id='nav-right'> R </div>
+                <div id='nav-left'> <i className="fa-brands fa-instagram"></i> <div className='logotext'>InstaClone</div> </div>
+                <div id='nav-right'> <Link to="/post"> <i class="fa-solid fa-camera">  </i> </Link> </div>
             </div>
             <div id='hr-line'></div>
 

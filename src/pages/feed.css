@@ -7,6 +7,19 @@ body {
     height: 45px;
     justify-content: space-between;
 }
+#nav-left {
+display: flex;
+}
+
+.fa-instagram {
+    font-size:40px;
+    color:red;
+}
+
+#nav-left > .logotext {
+font-size: larger;
+font-weight: bold;
+}
 
 #hr-line {
     background: red;
