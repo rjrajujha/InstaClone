@@ -29,7 +29,7 @@ function Feed() {
                         <div id='card-footer'>
                             <div id='card-footer-likes'>
                                 <div id='card-likes-icon'>
-                                    <div id='like-post'>Hrt</div>
+                                    <div id='like-post'><i class="fa-regular fa-heart"></i></div>
                                     <div id='card-likes-count'> {e.likes} Likes</div>
                                 </div>
                                 <div id='card-footer-date'>{e.date}</div>
@@ -37,8 +37,8 @@ function Feed() {
                             <div id='card-footer-description'>{e.description}</div>
                         </div>
                     </div>
-                )
-            })}
+                );
+            })};
         </React.Fragment>
     );
 }
