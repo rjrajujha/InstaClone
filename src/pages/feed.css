@@ -16,7 +16,7 @@ display: flex;
     color:red;
 }
 
-#nav-left > .logotext {
+.logotext {
 font-size: larger;
 font-weight: bold;
 }

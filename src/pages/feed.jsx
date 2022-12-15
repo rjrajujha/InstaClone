@@ -8,7 +8,7 @@ function Feed() {
     return (
         <React.Fragment>
             <div id='header'>
-                <div id='nav-left'> <i className="fa-brands fa-instagram"></i> <div className='logotext'>InstaClone</div> </div>
+                <div id='nav-left'>  <Link to="/"> <i className="fa-brands fa-instagram"></i> </Link> <p className='logotext'>InstaClone</p> </div>
                 <div id='nav-right'> <Link to="/post"> <i class="fa-solid fa-camera">  </i> </Link> </div>
             </div>
             <div id='hr-line'></div>
