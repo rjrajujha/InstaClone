@@ -1,4 +1,3 @@
-// import 'https://kit.fontawesome.com/4d0203a1a3.js';
 import './feed.css';
 import React from 'react';
 import userData from '../../src/mock_data/userData.json'
@@ -8,7 +7,7 @@ function Feed() {
     return (
         <React.Fragment>
             <div id='header'>
-                <div id='nav-left'> L </div>
+                <div id='nav-left'> <i class="fa fa-car"></i> </div>
                 <div id='nav-right'> R </div>
             </div>
             <div id='hr-line'></div>
