@@ -6,4 +6,4 @@
 https://stirring-dolphin-36f821.netlify.app
 
 ### Render
-https://insta-node-api.onrender.com
+https://instaclone-jrs6.onrender.com
