@@ -1,11 +1,12 @@
 import React from 'react';
-import './feed.css'
+import { Link } from 'react-router-dom';
 
 function Post() {
     return (
         <React.Fragment>
-            <p>Post page</p>
-            <p>This page is under construction</p>
+            <div id='header'>
+                <div id='nav-left'>  <Link to="/"> <i className="fa-brands fa-instagram"></i> </Link> <p className='logotext'>InstaClone</p> </div></div>
+            <div id='hr-line'></div>
         </React.Fragment>
     );
 }
