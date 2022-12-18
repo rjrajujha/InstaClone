@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const INSTACLONE_API = 'https://'
+const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users'
 
 function Post() {
     const [imgFile, setImgFile] = useState();
