@@ -7,13 +7,14 @@ body {
     height: 45px;
     justify-content: space-between;
 }
+
 #nav-left {
-display: flex;
+    display: flex;
 }
 
 .fa-instagram {
-    font-size:40px;
-    color:red;
+    font-size: 40px;
+    color: red;
     margin: 5px 4px 0 5px;
 }
 
@@ -23,8 +24,8 @@ display: flex;
 }
 
 .logotext {
-font-size: larger;
-font-weight: bold;
+    font-size: larger;
+    font-weight: bold;
 }
 
 #hr-line {
@@ -42,7 +43,12 @@ font-weight: bold;
     border: 2px solid rgba(0, 0, 0, .2);
     margin-top: 25px;
     border-radius: 6px;
+}
 
+#card-img>img {
+    width: 448px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
 }
 
 #card-nav {
@@ -72,14 +78,6 @@ font-weight: bold;
 
 #card-nav-rigth>a {
     text-decoration: none;
-}
-
-
-
-#card-img>img {
-    width: 448px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 4px;
 }
 
 #card-footer {
@@ -113,4 +111,23 @@ font-weight: bold;
 
 #like-post {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+    #card {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        max-width: max-content;
+        height: auto;
+        border: 2px solid rgba(0, 0, 0, .2);
+        margin-top: 25px;
+        border-radius: 6px;
+    }
+
+    #card-img>img {
+        width: 300px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        border-radius: 4px;
+    }
 }
