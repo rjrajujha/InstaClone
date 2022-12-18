@@ -2,10 +2,9 @@ import './feed.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users'
+const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users';
 
 function Feed() {
-
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         fetch(INSTACLONE_API)
@@ -17,7 +16,7 @@ function Feed() {
             .catch((e) => console.log(e));
     }, []);
     const defaultImg = "https://cdn.siasat.com/wp-content/uploads/2020/04/Instagram--780x470.jpg";
-    
+
     return (
         <React.Fragment>
             <div id='header'>
@@ -44,6 +43,7 @@ function Feed() {
                                 <div id='card-likes-icon'>
                                     <div id='like-post'><i className="fa-regular fa-heart"></i></div>
                                     <div id='card-likes-count'> {e.likes} Likes</div>
+                                    <i class="fa-solid fa-share"></i>
                                 </div>
                                 <div id='card-footer-date'>{e.date.split("T")[0]}</div>
                             </div> <br />
@@ -51,7 +51,7 @@ function Feed() {
                         </div>
                     </div>
                 );
-            })};
+            })}
         </React.Fragment>
     );
 }
