@@ -45,7 +45,7 @@ function Feed() {
                                     <div id='like-post'><i className="fa-regular fa-heart"></i></div>
                                     <div id='card-likes-count'> {e.likes} Likes</div>
                                 </div>
-                                <div id='card-footer-date'>{e.date}</div>
+                                <div id='card-footer-date'>{e.date.split("T")[0]}</div>
                             </div> <br />
                             <div id='card-footer-description'>{e.description}</div>
                         </div>
