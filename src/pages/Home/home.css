@@ -1,0 +1,35 @@
+#homemain {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#homeimg>img {
+    margin-top: 20px;
+    margin-left: 120px;
+    max-width: 400px;
+}
+
+#feedbtn {
+    width: 80px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, .6);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+#hometext {
+    margin: auto auto auto auto;
+    color: blue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 450px) {
+    #homeimg>img {
+        margin-top: 20px;
+        margin-left: 80px;
+        max-width: 350px;
+    }
+}

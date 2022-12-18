@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import Home from "./pages/home";
-import Feed from './pages/feed';
-import Post from "./pages/addpost";
-import NoPage from './pages/nopage';
+import Home from "./pages/Home/home";
+import Feed from './pages/Feed/feed';
+import Post from "./pages/AddPost/addpost";
+import NoPage from './pages/NoPage/nopage';
 
 
 function App() {
