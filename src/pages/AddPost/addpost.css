@@ -1,3 +1,35 @@
-#header {
-    background-color: rgb(240, 255, 255);
+form {
+    margin: 200px auto;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 10px rgb(100, 155, 155);
+}
+
+form div {
+    padding: 5px;
+}
+
+form>div>input {
+    width: 100%;
+    border: 1px solid rgb(83, 83, 255);
+}
+
+form>div {
+    display: flex;
+}
+
+form>div>div>input {
+    width: 100%;
+    border: 1px solid rgb(83, 83, 255);
+}
+
+#postbtn {
+    width: 45px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, .6);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
 }

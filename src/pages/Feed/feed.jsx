@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users';
 
 function Feed() {
+
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         fetch(INSTACLONE_API)
@@ -41,9 +42,12 @@ function Feed() {
                         <div id='card-footer'>
                             <div id='card-footer-likes'>
                                 <div id='card-likes-icon'>
-                                    <div id='like-post'><i className="fa-regular fa-heart"></i></div>
+                                    <div id='like-post'>
+                                        <i className="fa-regular fa-heart"></i>
+                                        <i className="fa-solid fa-share"></i>
+                                    </div>
+
                                     <div id='card-likes-count'> {e.likes} Likes</div>
-                                    <i class="fa-solid fa-share"></i>
                                 </div>
                                 <div id='card-footer-date'>{e.date.split("T")[0]}</div>
                             </div> <br />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import './addpost.css';
 
 const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users'
 
@@ -18,7 +19,7 @@ function Post() {
         formData.append('location', location)
         formData.append('description', description)
 
-        await fetch(INSTACLONE_API, { method: 'post', body: formData }).then((res) => res.json()).then((data) => {console.log(data); }).catch((e) => console.log(e))
+        await fetch(INSTACLONE_API, { method: 'post', body: formData }).then((res) => res.json()).then((data) => { console.log(data); }).catch((e) => console.log(e))
         navigate('/feed');
     }
     return (
@@ -29,20 +30,20 @@ function Post() {
 
             <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div>
-                    <input type='file' name='image' onChange={(e) => { setImgFile(e.target.files[0]) }} accept='image/*' />
+                    <input type='file' name='image' onChange={(e) => { setImgFile(e.target.files[0]) }} accept='image/*' required/>
                 </div>
                 <div>
                     <div>
-                        <input type='text' placeholder="Author" name='name' value={name} onChange={(e) => setName(e.target.value)} />
+                        <input type='text' placeholder="Author" name='name' value={name} onChange={(e) => setName(e.target.value)} required />
                     </div>
                     <div>
-                        <input type='text' placeholder="Location" name='location' value={location} onChange={(e) => setLocation(e.target.value)} />
+                        <input type='text' placeholder="Location" name='location' value={location} onChange={(e) => setLocation(e.target.value)} required />
                     </div>
                 </div>
                 <div>
-                    <input type='text' placeholder="Description" name='description' value={description} onChange={(e) => setDescription(e.target.value)} />
+                    <input type='text' placeholder="Description" name='description' value={description} onChange={(e) => setDescription(e.target.value)} required />
                 </div>
-                <input type='submit' value="Post" />
+                <input id="postbtn" type='submit' value="Post" />
             </form>
         </React.Fragment>
     );
