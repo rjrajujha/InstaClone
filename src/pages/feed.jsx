@@ -1,22 +1,23 @@
 import './feed.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-// import userData from '../../src/mock_data/userData.json';
-// const fetch = require('node-fetch');
-let userData;
-
-fetch('https://rjrajujha.github.io/insta-node-api/mock_data/userData.json')
-    .then((val) => val.json())
-    .then((val2) => {
-        console.log("data fetched from github/mock_data");
-        userData = val2;
-    }).catch((err) => { console.log(`Error is ${err}`) })
-
+const INSTACLONE_API = 'https://instaclone-backened-api.onrender.com/api/posts'
 
 function Feed() {
-    const users = userData.user;
-    const defaultImg = "https://cdn.siasat.com/wp-content/uploads/2020/04/Instagram--780x470.jpg"
+
+    const [posts, setPosts] = useState([]);
+    useEffect(() => {
+        fetch(INSTACLONE_API)
+            .then((res) => res.json())
+            .then((data) => {
+                setPosts(data);
+                console.log("API Fetched");
+            })
+            .catch((e) => console.log(e));
+    }, []);
+    const defaultImg = "https://cdn.siasat.com/wp-content/uploads/2020/04/Instagram--780x470.jpg";
+    
     return (
         <React.Fragment>
             <div id='header'>
@@ -25,7 +26,7 @@ function Feed() {
             </div>
             <div id='hr-line'></div>
 
-            {users.map((e, i) => {
+            {posts.map((e, i) => {
                 return (
                     <div id='card'>
                         <div id='card-nav'>
