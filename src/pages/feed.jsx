@@ -2,7 +2,7 @@ import './feed.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-const INSTACLONE_API = 'https://instaclone-backened-api.onrender.com/api/posts'
+const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users'
 
 function Feed() {
 
