@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import './addpost.css';
+import env from "react-dotenv";
 
-const INSTACLONE_API = process.env.MONGODB_URI;
+const INSTACLONE_API = env.MONGODB_URI;
 
 function Post() {
 

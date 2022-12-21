@@ -1,8 +1,9 @@
 import './feed.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import env from 'react-dotenv';
 
-const INSTACLONE_API = process.env.MONGODB_URI;
+const INSTACLONE_API = env.MONGODB_URI;
 
 function Feed() {
 
