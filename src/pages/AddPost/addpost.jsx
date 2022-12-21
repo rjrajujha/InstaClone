@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import './addpost.css';
 
-const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users'
+const INSTACLONE_API = process.env.MONGODB_URI;
 
 function Post() {
 
