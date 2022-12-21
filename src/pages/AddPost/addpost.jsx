@@ -25,7 +25,7 @@ function Post() {
     return (
         <React.Fragment>
             <div id='header'>
-                <div id='nav-left'>  <Link to="/"> <i className="fa-brands fa-instagram"></i> </Link> <p className='logotext'>InstaClone</p> </div></div>
+                <div id='nav-left'>  <Link to="/"> <i className="fa-brands fa-instagram"></i> </Link> <p className='logotext'>Insta</p> </div></div>
             <div id='hr-line'></div>
 
             <form onSubmit={handleSubmit} encType="multipart/form-data">
