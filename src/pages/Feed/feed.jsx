@@ -2,7 +2,7 @@ import './feed.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-const INSTACLONE_API = 'https://insta-node-api.onrender.com/api/users';
+const INSTACLONE_API = process.env.MONGODB_URI;
 
 function Feed() {
 
